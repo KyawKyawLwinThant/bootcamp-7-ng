@@ -1,0 +1,43 @@
+.bell {
+  position: relative;
+  &:hover {
+    cursor: pointer;
+    opacity: 0.7;
+  }
+  &__count {
+    background-color: red;
+    border: 1px white solid;
+    border-radius: 2px;
+    min-width: 14px;
+    height: 14px;
+    .bell {
+      &:hover {
+        cursor: pointer;
+        opacity: 0.7;
+      }
+      &__count {
+        background-color: red;
+        border: 1px white solid;
+        border-radius: 2px;
+        min-width: 14px;
+        height: 14px;
+        padding: 10px 2px;
+        text-align: center;
+        bottom: 14px;
+        left: 10px;
+        font-size: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    position: absolute;
+    text-align: center;
+    bottom: 14px;
+    left: 10px;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

@@ -1,13 +1,22 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { NotificationsManagerComponent } from './notifications-manager/notifications-manager.component';
+import { NotificationsButtonComponent } from './notifications-button/notifications-button.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrl: './app.component.scss',
+  imports: [
+    RouterOutlet,
+    NotificationsManagerComponent,
+    NotificationsButtonComponent,
+  ],
 })
 export class AppComponent {
-  title = 'input-output';
+  public changeNotification(num:number) {
+      this.notificationsCount = num;
+  }
+  notificationsCount = 10;
 }
